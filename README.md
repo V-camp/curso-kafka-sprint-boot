@@ -50,7 +50,11 @@ O projeto consiste na implementação de um sistema para **simulação de compra
 
 - **Faturamento**  
   Responsável pelo processamento do faturamento.  
-  Consome as mensagens do Kafka e gera um **relatório com os dados da compra do cliente**.
+  Consome e Produz as mensagens do Kafka e gera um **relatório com os dados da compra do cliente**.
+
+- **Logistica**  
+  Responsável pelas notificações sobre envio do produto.  
+  Consome e Produz mensagens para o Kafka, gera o codigo de rastreio do produto e atualiza o status do pedido.
 
 ---
 
