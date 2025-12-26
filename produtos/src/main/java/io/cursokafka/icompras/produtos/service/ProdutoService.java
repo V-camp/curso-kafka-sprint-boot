@@ -25,4 +25,9 @@ public class ProdutoService {
     public List<Produto> obterTodos() {
         return repository.findAll();
     }
+
+    public void deletar(Produto produto) {
+        produto.setAtivo(false);
+        repository.save(produto);
+    }
 }
